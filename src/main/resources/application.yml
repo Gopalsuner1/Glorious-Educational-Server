@@ -1,0 +1,19 @@
+spring:
+  application:
+   name : Glorious
+  data:
+    mongodb:
+      uri: mongodb+srv://glorious:gopal@glorius-education.yjagxwu.mongodb.net/?appName=glorius-education 
+      database: school
+  security:
+    user:
+        user: admin
+        password: admin    
+logging:
+  level:
+    root: WARN
+    in.glorious: INFO
+    org.springframework: WARN
+    org.springframework.boot: WARN
+    org.springframework.security: WARN
+    org.mongodb.driver: ERROR
