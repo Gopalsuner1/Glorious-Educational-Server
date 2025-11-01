@@ -5,6 +5,9 @@ WORKDIR /app
 # Copy everything to container
 COPY . .
 
+# ✅ Make mvnw executable
+RUN chmod +x mvnw
+
 # Build the project (this will generate the JAR)
 RUN ./mvnw clean package -DskipTests
 
@@ -15,5 +18,4 @@ WORKDIR /app
 # Copy the built jar from previous stage
 COPY --from=builder /app/target/*.jar app.jar
 
-# Run the application
 ENTRYPOINT ["java", "-jar", "app.jar"]
