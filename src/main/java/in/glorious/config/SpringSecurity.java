@@ -19,7 +19,7 @@ public class SpringSecurity  {
                     .csrf(c -> c.disable())
                     .sessionManagement(s -> s.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                     .authorizeRequests(auth -> 
-                                       auth.requestMatchers("/public/**").permitAll()
+                                       auth.requestMatchers("/ok/**").permitAll()
                                        .anyRequest().authenticated()
                                        )
                     .httpBasic()
