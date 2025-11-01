@@ -1,14 +1,12 @@
 spring:
   application:
    name : Glorious
+   
+
   data:
     mongodb:
       uri: mongodb+srv://glorious:gopal@glorius-education.yjagxwu.mongodb.net/?appName=glorius-education 
-      database: school
-  security:
-    user:
-        user: admin
-        password: admin    
+      database: school  
 logging:
   level:
     root: WARN
@@ -17,3 +15,6 @@ logging:
     org.springframework.boot: WARN
     org.springframework.security: WARN
     org.mongodb.driver: ERROR
+
+server:
+  port: ${PORT:8080}
