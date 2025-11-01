@@ -1,5 +1,12 @@
 package in.glorious.repo;
 
-public class StudentRepo {
+import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.stereotype.Repository;
+
+import in.glorious.model.Student;
+
+@Repository
+public interface StudentRepo extends MongoRepository<Student,String> {
+
     
-}
+} 
