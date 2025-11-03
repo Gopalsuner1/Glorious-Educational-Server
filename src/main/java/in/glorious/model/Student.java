@@ -20,7 +20,7 @@ import lombok.Data;
 public class Student {
     @Id
     private String id;
-
+    private String profilePhoto;
     private String studentId;
     private String studentName;
     private String lastName;
