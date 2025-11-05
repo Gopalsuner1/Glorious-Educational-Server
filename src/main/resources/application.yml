@@ -15,6 +15,9 @@ logging:
     org.springframework.boot: WARN
     org.springframework.security: WARN
     org.mongodb.driver: ERROR
-
+jwt:
+    secret: vnljsbvef904r093r0-3rtewnfdwkv3230r-03r
+    access-token-expiration-ms: 900000 # 15 minutes
+    refresh-token-expiration-ms: 1209600000 # 14 days
 server:
   port: ${PORT:8080}
