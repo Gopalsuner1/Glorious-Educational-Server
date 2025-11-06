@@ -16,8 +16,9 @@ logging:
     org.springframework.security: WARN
     org.mongodb.driver: ERROR
 jwt:
-    secret: vnljsbvef904r093r0-3rtewnfdwkv3230r-03r
+    secret: wA0bP0nNQG7dm+V9z0BC3dS3b9U6L6iGf5hHb+Yk9e0=
     access-token-expiration-ms: 900000 # 15 minutes
     refresh-token-expiration-ms: 1209600000 # 14 days
 server:
   port: ${PORT:8080}
+url: https://gloriousserver.onrender.com/v1/public/ok
